@@ -1,0 +1,4 @@
+Technician,n_blocks,n_single_case_blocks,n_multi_case_blocks,avg_cases_per_block,median_cases_per_block,max_cases_per_block,avg_sec_per_case_in_block,median_sec_per_case_in_block,pct_blocks_under_2s_per_case,pct_blocks_under_5s_per_case
+Gary Arnold,1556,119,1437,27.40745501285347,11.0,233,20.295666570712825,11.033333333333333,0.3479471120389701,13.013221990257481
+Juan Mendez,1075,161,914,16.250232558139533,6.0,177,57.3496816907942,39.918308702791464,0.0,0.0
+Matt Shawn,176,24,152,23.380681818181817,8.0,206,42.31083548168584,23.895348837209305,0.0,0.0

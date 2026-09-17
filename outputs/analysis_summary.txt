@@ -1,0 +1,33 @@
+
+=== DURATION SUMMARY ===
+ Technician  n_approvals  n_with_duration    mean_sec  median_sec       std_sec        cv  ci95_lower_sec  ci95_upper_sec       skew  min_sec  p90_sec    max_sec  pct_under_2s  pct_under_5s  pct_under_10s  pct_under_30s  pct_under_60s  pct_same_minute  pct_same_second
+Gary Arnold        42646            42645 1969.886904         4.0 191454.786288 97.190750      152.729339     3787.044468 157.695830      0.0     46.0 34386056.0      4.959550     53.042561      77.195451      86.568179      91.593387        91.593387         0.633134
+Juan Mendez        17469            17468 1496.211186        29.0 100505.264411 67.173181        5.665112     2986.757260 131.561557      0.0    132.3 13264186.0      0.194642      1.167850       5.186627      50.509503      80.175177        80.175177         0.074422
+ Matt Shawn         4115             4114  574.731405         6.0   4664.932901  8.116718      432.141372      717.321438  11.931076      0.0     84.0    83760.0      0.947982     11.035489      66.431697      80.432669      87.287312        87.287312         0.461838
+
+=== ONE-SAMPLE T-TESTS vs INDUSTRY STANDARDS ===
+ Technician  standard_min  standard_sec  sample_mean_sec     n    t_stat  p_value_two_sided  p_value_one_sided_below  meets_standard  significantly_below
+Gary Arnold            10           600      1969.886904 42645  1.477585       1.395262e-01                 0.930237            True                False
+Gary Arnold             5           300      1969.886904 42645  1.801171       7.168303e-02                 0.964158            True                False
+Gary Arnold             2           120      1969.886904 42645  1.995322       4.601411e-02                 0.976993            True                False
+Gary Arnold             1            60      1969.886904 42645  2.060039       3.940085e-02                 0.980300            True                False
+Juan Mendez            10           600      1496.211186 17468  1.178537       2.385987e-01                 0.880701            True                False
+Juan Mendez             5           300      1496.211186 17468  1.573043       1.157269e-01                 0.942137            True                False
+Juan Mendez             2           120      1496.211186 17468  1.809747       7.035221e-02                 0.964824            True                False
+Juan Mendez             1            60      1496.211186 17468  1.888648       5.895553e-02                 0.970522            True                False
+ Matt Shawn            10           600       574.731405  4114 -0.347430       7.282858e-01                 0.364143           False                False
+ Matt Shawn             5           300       574.731405  4114  3.777418       1.607032e-04                 0.999920            True                False
+ Matt Shawn             2           120       574.731405  4114  6.252327       4.455631e-10                 1.000000            True                False
+ Matt Shawn             1            60       574.731405  4114  7.077297       1.720276e-12                 1.000000            True                False
+
+=== BLOCK (BATCH-APPROVAL) SUMMARY ===
+ Technician  n_blocks  n_single_case_blocks  n_multi_case_blocks  avg_cases_per_block  median_cases_per_block  max_cases_per_block  avg_sec_per_case_in_block  median_sec_per_case_in_block  pct_blocks_under_2s_per_case  pct_blocks_under_5s_per_case
+Gary Arnold      1556                   119                 1437            27.407455                    11.0                  233                  20.295667                     11.033333                      0.347947                     13.013222
+Juan Mendez      1075                   161                  914            16.250233                     6.0                  177                  57.349682                     39.918309                      0.000000                      0.000000
+ Matt Shawn       176                    24                  152            23.380682                     8.0                  206                  42.310835                     23.895349                      0.000000                      0.000000
+
+=== PAYOUT CHANGE TWO-SAMPLE T-TESTS ===
+ Technician  n_pre  n_post  mean_pre_sec  mean_post_sec  median_pre_sec  median_post_sec  has_both_periods   t_stat  p_value  significant_change_ttest  mannwhitney_u  mannwhitney_p  significant_change_mannwhitney
+Gary Arnold  12603   30042   2069.674046    1928.024932             5.0              4.0              True 0.075536 0.939789                     False    247049744.0            0.0                            True
+Juan Mendez  17468       0   1496.211186            NaN            29.0              NaN             False      NaN      NaN                     False            NaN            NaN                           False
+ Matt Shawn   4114       0    574.731405            NaN             6.0              NaN             False      NaN      NaN                     False            NaN            NaN                           False

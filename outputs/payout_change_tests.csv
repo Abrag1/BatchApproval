@@ -1,0 +1,4 @@
+Technician,n_pre,n_post,mean_pre_sec,mean_post_sec,median_pre_sec,median_post_sec,has_both_periods,t_stat,p_value,significant_change_ttest,mannwhitney_u,mannwhitney_p,significant_change_mannwhitney
+Gary Arnold,12603,30042,2069.674045862096,1928.0249317621997,5.0,4.0,True,0.07553571121070779,0.9397890142337775,False,247049744.0,0.0,True
+Juan Mendez,17468,0,1496.2111861689948,,29.0,,False,,,False,,,False
+Matt Shawn,4114,0,574.7314049586777,,6.0,,False,,,False,,,False
